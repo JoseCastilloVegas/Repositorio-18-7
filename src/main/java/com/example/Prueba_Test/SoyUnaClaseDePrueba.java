@@ -6,7 +6,9 @@ public class SoyUnaClaseDePrueba {
 
     String a="Soy la cadena que va a estar ya en el master";
 
-    private String hola;
+    private String hola= "pico";
+
+
 
 
 
