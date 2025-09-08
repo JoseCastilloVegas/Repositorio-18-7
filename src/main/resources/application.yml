@@ -1,4 +1,11 @@
 spring:
+  artemis:
+    mode: native
+    host: localhost
+    port: 61616
+    user: artemis
+    password: artemis
+
   datasource:
     url: ${DB_URL}
     username: ${DB_USERNAME}
@@ -9,3 +16,6 @@ spring:
       ddl-auto: update
     show-sql: true
     open-in-view: false
+
+  kafka:
+    bootstrap-servers: localhost:9092

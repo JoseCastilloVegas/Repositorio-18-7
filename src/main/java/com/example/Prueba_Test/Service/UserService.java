@@ -19,7 +19,7 @@ public class UserService {
     }
 
     public User getUserByEmail(String email) {
-        return userRepository.findByEmail(email).orElseThrow();
+        return userRepository.findByEmail(email).orElseThrow(()->new IllegalArgumentException("Usuario con email no encontrado"));
     }
 
     public User encuentraPorId(Long id) {
